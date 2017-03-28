@@ -9,8 +9,7 @@
 </head>
 <body>
 <fieldset id="HoofdMenu">
-    <canvas id=c></canvas>
-    <form>
+    <form id="enterName">
         <label for="name">Naam:</label>
         <input type="text" name="name" id="name">
         <input type="submit" name="gaVerder" id="gaVerder" value="Ga Verder">
@@ -24,7 +23,7 @@
         <ol></ol>
         <ul></ul>
     </div>
-    <form>
+    <form id="startGame">
         <input type="submit" name="start" value="Start Game">
         <input type="button" value="Gemakkelijk">
         <input type="button" value="Gemiddeld">
@@ -38,7 +37,8 @@
     <section id="theGame">
         <div id="hint"></div>
         <article id="Sudoku"></article>
-        <input type="button" name="controleer" value="Controleer">
+        <input type="button" name="Finish" value="Finish" id="Finish">
+        <input type="button" name="controleer" value="Controleer" id="controleer">
     </section>
 
     <section id="Controle">
@@ -56,7 +56,7 @@
 <fieldset id="Congratulations">
     <h2>Proficiat </h2>
     <h3>U loste deze sudoku met succes op</h3>
-    <section id="Finish">
+    <section id="Einde">
         <p>Score</p>
         <p></p>
         <p></p>
