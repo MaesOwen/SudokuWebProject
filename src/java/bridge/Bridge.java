@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Owen
  */
-@WebServlet(name = "Bridge", urlPatterns = {"/*"})
+@WebServlet(name = "Bridge", urlPatterns = {"/API/*"})
 public class Bridge extends HttpServlet {
 
     /**

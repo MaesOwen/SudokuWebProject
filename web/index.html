@@ -1,16 +1,85 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+    <meta name="author" content="Gilles Styns"/>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="assets/CSS/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/CSS/screen.css" type="text/css"/>
+</head>
+<body>
+<fieldset id="HoofdMenu">
+    <canvas id=c></canvas>
+    <form>
+        <label for="name">Naam:</label>
+        <input type="text" name="name" id="name">
+        <input type="submit" name="gaVerder" id="gaVerder" value="Ga Verder">
+    </form>
+</fieldset>
+
+<fieldset id="selectDifficulty">
+    <h1>Welkom</h1>
+    <div>
+        <h2>Scores to beat</h2>
+        <ol></ol>
+        <ul></ul>
+    </div>
+    <form>
+        <input type="submit" name="start" value="Start Game">
+        <input type="button" value="Gemakkelijk">
+        <input type="button" value="Gemiddeld">
+        <input type="button" value="Moeilijk">
+    </form>
+</fieldset>
+
+<fieldset id="SudokuGame">
+    <p class="name"></p>
+    <p id="log">00:00:00</p>
+    <section id="theGame">
+        <div id="hint"></div>
+        <article id="Sudoku"></article>
+        <input type="button" name="controleer" value="Controleer">
+    </section>
+
+    <section id="Controle">
+        <div>
+            <p>U heeft fouten</p>
+            <ul id="fouten">
+
+            </ul>
+        </div>
+        <input type="button" name="Restart" value="Restart" id="Restart">
+        <input type="button" name="Continue" value="Continue" id="Continue">
+    </section>
+</fieldset>
+
+<fieldset id="Congratulations">
+    <h2>Proficiat </h2>
+    <h3>U loste deze sudoku met succes op</h3>
+    <section id="Finish">
+        <p>Score</p>
+        <p></p>
+        <p></p>
+    </section>
+
+
+    <section id="HighScores">
+        <p>Highscores</p>
+        <ol></ol>
+        <ul></ul>
+    </section>
+    <input type="button" name="viewSolution" id="viewSolution" value="View Solution">
+    <input type="button" name="Restart" id="Restart2" value="Restart">
+    <input type="button" name="viewHighscores" value="View Highscores" id="viewHighscores">
+    <input type="button" name="Stop" value="Stop" id="Stop">
+</fieldset>
+
+<fieldset id="Solution">
+    <article></article>
+    <input type="button" name="goBackFromSolution" value="Go Back" id="goBackFromSolution">
+</fieldset>
+
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
 </html>
